@@ -8,7 +8,7 @@
 		<artifactId>Micro-Service-Skeleton-Parent</artifactId>
 		<version>2.0.0</version>
 	</parent>
-	<artifactId>Micro-Service-Skeleton-Gateway</artifactId>
+	<artifactId>mss-gateway</artifactId>
 	<version>2.0.0</version>
 	<packaging>jar</packaging>
 

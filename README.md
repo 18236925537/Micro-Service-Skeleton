@@ -327,3 +327,5 @@ hystrix:
 [源码传送](https://github.com/babylikebird/Micro-Service-Skeleton)
 [源码传送](https://github.com/babylikebird/Micro-Service-Skeleton)
 [源码传送](https://github.com/babylikebird/Micro-Service-Skeleton)
+
+https://blog.csdn.net/w1054993544/article/details/78932614
