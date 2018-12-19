@@ -2,7 +2,7 @@ server:
   port: 9010
 spring:
   application:
-    name: mss-eureka
+    name: mss-registry
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     joda-date-time-format: yyyy-MM-dd HH:mm:ss
@@ -10,7 +10,7 @@ spring:
     time-zone: GMT+8
 eureka:
   instance:
-    hostname: mss-eureka
+    hostname: mss-registry
   client:
     register-with-eureka: false
     fetch-registry: false
