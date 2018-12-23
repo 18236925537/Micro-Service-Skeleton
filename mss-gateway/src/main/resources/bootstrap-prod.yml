@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    config:
+      name: micro-service
+      profile: prod
+      label: master
+      discovery:
+        enabled: true
+        serviceId: ms-config
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone:  http://mss-eureka1:9010/eureka/,http://mss-eureka2:9011/eureka/
