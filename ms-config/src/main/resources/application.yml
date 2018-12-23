@@ -19,19 +19,19 @@ spring:
 #          uri: https://github.com/DavidKingCN/Micro-Service-Skeleton/      # 配置git仓库的地址
 #          search-paths: config-repo                                      # git仓库地址下的相对地址，可以配置多个，用,分割。
 #          username: 13621151569@yeah.net                                  # git仓库的账号
-#          password: bjdk2009                                               # git仓库的密码
+#          password: ******                                               # git仓库的密码
 
 
-  rabbitmq:
-    host: localhost
-    port: 15672
-    username: admin
-    password: 123456
+#  rabbitmq:
+#    host: localhost
+#    port: 15672
+#    username: admin
+#    password: 123456
 eureka:
   client:
     serviceUrl:
       defaultZone: http://mss-eureka1:9010/eureka/,http://mss-eureka2:9011/eureka/   ## 注册中心eurka地址
 
-management:
-  security:
-     enabled: false
+#management:
+#  security:
+#     enabled: false
