@@ -9,23 +9,29 @@ eureka:
     instance-id: ${spring.cloud.client.ip-address}:${server.port}
     lease-renewal-interval-in-seconds: 5
     lease-expiration-duration-in-seconds: 10
-  client:
-      service-url:
-        defaultZone: http://mss-eureka1:9010/eureka/,http://mss-eureka2:9011/eureka/
+#  client:
+#      service-url:
+#        defaultZone: http://mss-eureka1:9010/eureka/,http://mss-eureka2:9011/eureka/
 zuul:
   host:
     connect-timeout-millis: 10000
     socket-timeout-millis: 60000
   routes:
     uaa:
-      path: /uaa/**
+      path: ${route.path}
       strip-prefix: true
       sensitiveHeaders:
-      serviceId: authcenter
+      serviceId: mss-oauth
 security:
   oauth2:
+    client:
+       ##网关的地址
+      access-token-uri: ${gateway.token.url}
+      user-authorization-uri: ${gateway.auth.url}
+      client-id: ${gateway.client.id}
+      client-secret: ${gateway.client.secret}
     resource:
-      user-info-uri:  http://localhost:9060/user
+      user-info-uri: ${gateway.auth.info.url}
       prefer-token-info: false
 ##############end#####################
 ####超时配置####
