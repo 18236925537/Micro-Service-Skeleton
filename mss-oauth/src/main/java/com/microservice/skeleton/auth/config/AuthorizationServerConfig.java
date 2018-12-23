@@ -3,6 +3,7 @@ package com.microservice.skeleton.auth.config;
 import com.microservice.skeleton.auth.error.MssWebResponseExceptionTranslator;
 import com.microservice.skeleton.auth.service.impl.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -33,6 +34,9 @@ import javax.sql.DataSource;
 @Configuration
 @EnableAuthorizationServer
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
+
+//    @Value("${mysql.username}")
+//    private String dbUsername;
 
     @Autowired
     private AuthenticationManager authenticationManager;
