@@ -2,7 +2,7 @@ server:
   port: 9011
 spring:
   application:
-    name: mss-eureka
+    name: mss-registry
 eureka:
   instance:
     hostname: mss-eureka2
