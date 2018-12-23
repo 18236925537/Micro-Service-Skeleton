@@ -12,7 +12,7 @@
  - Spring Cloud Config 统一配置中心
  - Monitor微服务监控
 
-代码传送：https://github.com/babylikebird/Micro-Service-Skeleton
+代码传送：https://github.com/DavidKingCN/Micro-Service-Skeleton
 
 ## 2.注册中心
 注册中心很简单，这里主要说一下注册中心的高可用配置
