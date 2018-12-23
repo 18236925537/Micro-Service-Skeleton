@@ -2,7 +2,7 @@ server:
   port: 9023
 spring:
   application:
-    name: resource
+    name: mss-resource
   zipkin:
       base-url: ${monitor.url}
 #eureka:

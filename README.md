@@ -327,5 +327,11 @@ hystrix:
 [源码传送](https://github.com/babylikebird/Micro-Service-Skeleton)
 [源码传送](https://github.com/babylikebird/Micro-Service-Skeleton)
 [源码传送](https://github.com/babylikebird/Micro-Service-Skeleton)
-
+csdn website
 https://blog.csdn.net/w1054993544/article/details/78932614
+github website
+https://github.com/babylikebird/Micro-Service-Skeleton
+spring cloud start order
+注册服务器register ---> 
+认证服务器oauth --->
+、gateway、resource
