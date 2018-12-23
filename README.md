@@ -1,6 +1,8 @@
 # Micro-Service-Skeleton
 微服务开发基础框架
 
+spring cloud version 2.0.7
+
 ## 1.架构图
 技术团队通过一段时间的积累后，我们打算对往后的一些新项目采用Spring Cloud技术栈来实现。大概微服务的架构如下：
 ![这里写图片描述](http://img.blog.csdn.net/20180104142729219?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdzEwNTQ5OTM1NDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
@@ -327,11 +329,3 @@ hystrix:
 [源码传送](https://github.com/babylikebird/Micro-Service-Skeleton)
 [源码传送](https://github.com/babylikebird/Micro-Service-Skeleton)
 [源码传送](https://github.com/babylikebird/Micro-Service-Skeleton)
-csdn website
-https://blog.csdn.net/w1054993544/article/details/78932614
-github website
-https://github.com/babylikebird/Micro-Service-Skeleton
-spring cloud start order
-注册服务器register ---> 
-认证服务器oauth --->
-、gateway、resource
