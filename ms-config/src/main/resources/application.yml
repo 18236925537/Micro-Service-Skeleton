@@ -2,16 +2,36 @@ server:
   port: 8001
 spring:
   application:
-    name: spring-cloud-config-server
+    name: ms-config
+  profiles:
+    active: native
   cloud:
+  #配置文件的目录
     config:
       server:
-        git:
-          uri: https://github.com/DavidKingCN/spring-cloud-examples/      # 配置git仓库的地址
-          search-paths: config-repo                                      # git仓库地址下的相对地址，可以配置多个，用,分割。
-          username: *******************                                  # git仓库的账号
-          password: ******                                               # git仓库的密码
+        native:
+          search-locations: D:/spring-config/config-file
+#          searchLocations: D:/spring-config/config-file
+
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/DavidKingCN/Micro-Service-Skeleton/      # 配置git仓库的地址
+#          search-paths: config-repo                                      # git仓库地址下的相对地址，可以配置多个，用,分割。
+#          username: 13621151569@yeah.net                                  # git仓库的账号
+#          password: bjdk2009                                               # git仓库的密码
+
+
+  rabbitmq:
+    host: localhost
+    port: 15672
+    username: admin
+    password: 123456
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8000/eureka/   ## 注册中心eurka地址
+      defaultZone: http://mss-eureka1:9010/eureka/,http://mss-eureka2:9011/eureka/   ## 注册中心eurka地址
+
+management:
+  security:
+     enabled: false
