@@ -68,7 +68,7 @@ ping -n %span% 127.1>nul
 start cmd /k "java -jar %workspace_dir%\mss-registry\target\mss-registry-2.0.0.jar --spring.profiles.active=node-2"
 ping -n %span% 127.1>nul
 start cmd /k "java -jar %workspace_dir%\ms-config\target\ms-config-2.0.0.jar --spring.profiles.active=dev"
-ping -n 60 127.1>nul
+ping -n 120 127.1>nul
 start cmd /k "java -jar %workspace_dir%\mss-oauth\target\mss-oauth-2.0.0.jar --spring.profiles.active=dev"
 ping -n %span% 127.1>nul
 start cmd /k "java -jar %workspace_dir%\mss-gateway\target\mss-gateway-2.0.0.jar --spring.profiles.active=dev"
