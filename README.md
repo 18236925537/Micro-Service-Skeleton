@@ -325,7 +325,3 @@ hystrix:
 
 ## 7.结束
 到这里Spring Cloud OAUTH2.0统一认证的骨架就完成了，具体项目拿过来修改就可以满足项目的需求了。
-**重要事情再说三遍：**
-[源码传送](https://github.com/babylikebird/Micro-Service-Skeleton)
-[源码传送](https://github.com/babylikebird/Micro-Service-Skeleton)
-[源码传送](https://github.com/babylikebird/Micro-Service-Skeleton)
