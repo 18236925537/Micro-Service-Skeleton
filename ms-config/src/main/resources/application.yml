@@ -10,7 +10,7 @@ spring:
     config:
       server:
         native:
-          search-locations: D:/spring-config/config-file
+          search-locations: /usr/config-file
 #          searchLocations: D:/spring-config/config-file
 
 #    config:
@@ -22,11 +22,11 @@ spring:
 #          password: ******                                               # git仓库的密码
 
 
-#  rabbitmq:
-#    host: localhost
-#    port: 15672
-#    username: admin
-#    password: 123456
+  rabbitmq:
+    host: localhost
+    port: 15672
+    username: admin
+    password: 123456
 eureka:
   client:
     serviceUrl:

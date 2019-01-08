@@ -13,6 +13,11 @@ File Encoding         : 65001
 Date: 2018-12-07 17:26:38
 */
 
+-- 创建数据库
+create database `zuul_auth` default character set utf8 collate utf8_general_ci;
+
+use zuul_auth;
+
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
@@ -67,7 +72,8 @@ CREATE TABLE `oauth_approvals` (
   `scope` varchar(256) DEFAULT NULL,
   `status` varchar(10) DEFAULT NULL,
   `expiresAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `lastModifiedAt` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
+  -- `lastModifiedAt` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
+  `lastModifiedAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------

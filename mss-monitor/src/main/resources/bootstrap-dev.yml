@@ -7,6 +7,11 @@ spring:
       discovery:
         enabled: true
         serviceId: ms-config
+  rabbitmq:
+    host: localhost
+    port: 15672
+    username: admin
+    password: 123456
 #eureka:
 #  instance:
 #    prefer-ip-address: true
